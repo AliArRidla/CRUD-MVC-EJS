@@ -24,5 +24,10 @@ module.exports = {
         Artikel.update(req.koneksi, req.body, req.params.id,function(err){
             res.redirect('/artikel');
         })
+    },
+    delete: function(req,res){
+        Artikel.delete(req.koneksi,req.params.id,function(err){
+             res.redirect('/artikel');
+        })
     }
 }

@@ -29,5 +29,13 @@ module.exports = {
             konten = '${data.konten}'
             WHERE id = ${id}`,callback
         )
+    },
+
+    // delete
+    delete: function(koneksi,id,callback){
+        koneksi.query(
+            `DELETE FROM artikel WHERE id = ${id}`,callback
+        )
     }
+
 }

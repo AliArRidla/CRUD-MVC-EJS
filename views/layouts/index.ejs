@@ -19,7 +19,9 @@
               <p class="card-text"><%= row.konten %> </p>           
               <p class="text-muted">Author : <%= row.author %> </p>                     
               <a href="/artikel/edit/<%= row.id %>"  class="btn btn-primary">Edit</a> 
-              <a href="" class="btn btn-danger">Delete</a>               
+              <form action="/artikel/<%= row.id %>?_method=DELETE" method="POST" class="d-inline">
+                <button class="btn btn-danger" type="submit">Hapus</button>
+              </form>             
             </div>
           </div>
         </div>
