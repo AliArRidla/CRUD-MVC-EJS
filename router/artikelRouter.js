@@ -7,4 +7,6 @@ router.get('/tambah',artikelController.create)
 router.post('/',artikelController.store)
 router.get('/edit/:id',artikelController.edit)
 router.put('/:id',artikelController.update);
+router.delete('/:id',artikelController.delete);
+
 module.exports = router
