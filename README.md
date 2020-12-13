@@ -7,7 +7,7 @@ Type: Backend
 
 # Materi Javascript
 
-![Node%20JS%20174438ddaf6042399177df2b37278176/Infographic-Front-End-vs-Back-End-663x1536.png](Node%20JS%20174438ddaf6042399177df2b37278176/Infographic-Front-End-vs-Back-End-663x1536.png)
+![img/FB.png](img/FB.png)
 
 **Basic Front End**
 
