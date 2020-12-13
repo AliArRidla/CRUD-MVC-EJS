@@ -17,8 +17,9 @@
             <div class="card-body">
               <h5 class="card-title"><%= row.judul %> </h5>
               <p class="card-text"><%= row.konten %> </p>           
-              <p class="text-muted"><%= row.author %> </p>                     
-              <a href="#" class="btn btn-primary">Go somewhere</a>                
+              <p class="text-muted">Author : <%= row.author %> </p>                     
+              <a href="/artikel/edit/<%= row.id %>"  class="btn btn-primary">Edit</a> 
+              <a href="" class="btn btn-danger">Delete</a>               
             </div>
           </div>
         </div>
