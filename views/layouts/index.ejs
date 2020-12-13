@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+      <h1 class="display-3 mb-3 mt-4">Artikel</h1>
+      <a href="artikel/tambah" class="btn btn-success">Tambah</a>
+      <div class="row mt-4">
+        <% data.forEach(row => { %> 
+        <div class="col-sm-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title"><%= row.judul %> </h5>
+              <p class="card-text"><%= row.konten %> </p>           
+              <p class="text-muted"><%= row.author %> </p>                     
+              <a href="#" class="btn btn-primary">Go somewhere</a>                
+            </div>
+          </div>
+        </div>
+        <% }) %> 
+      </div>
+  </div>
+</body>
+</html>
