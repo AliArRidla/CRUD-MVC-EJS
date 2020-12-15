@@ -253,13 +253,6 @@ Hari ini kita akan mempraktekkan bagaimana
 
         module.exports = {
             index: function(req,res){
-               res.render('index');
-            }
-        }const { get } = require('../models/Artikel');
-        const Artikel = require('../models/Artikel')
-
-        module.exports = {
-            index: function(req,res){
                 Artikel:get(req.koneksi,function(err,rows){
                res.render('layouts/index',{data:rows});
                 })
